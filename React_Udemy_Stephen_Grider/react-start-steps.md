@@ -10,3 +10,6 @@
 - npm run dev
 - npm run build
 - npm run preview
+
+<!-- JSX Cheat Sheet -->
+- <https://jsx-notes.vercel.app/>
