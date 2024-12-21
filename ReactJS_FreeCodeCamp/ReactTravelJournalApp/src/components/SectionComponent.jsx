@@ -2,6 +2,7 @@ import PropTypes from "prop-types";
 
 import maduraiCityPic from "../assets/madurai_city.png";
 import chennaiCityPic from "../assets/chennai_city.png";
+import mumbaiCityPic from "../assets/mumbai_city.png";
 
 const SectionComponent = ({ log }) => {
     const getImageSource = (entryId) => {
@@ -10,6 +11,8 @@ const SectionComponent = ({ log }) => {
                 return maduraiCityPic;
             case 2:
                 return chennaiCityPic;
+            case 3:
+                return mumbaiCityPic;
             default:
                 return maduraiCityPic;
         }

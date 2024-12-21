@@ -84,3 +84,17 @@ put those things on the page.
 5. What does it mean for something to be "composable"?
 We have small pieces that we can put together to make something
 larger or greater than the individual pieces themselves.
+
+6. What do props help us accomplish?
+It makes a component more reusable.
+
+7. How do you pass props into a component?
+In the same way one pass attributes values to a HTML element.
+
+8. Can I pass a custom prop to a native DOM element?
+No. Because the JSX we use to describe native DOM elements will
+be turned into REAL DOM elements by React. And real DOM elements
+only have the properties/attributes specified in the HTML specification.
+
+9. What is the datatype of `props`?
+Object
