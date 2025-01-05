@@ -1,4 +1,6 @@
-# Steps to run react project without CRA or vite
+# Creating a react project
+
+## Steps to run react project without CRA or vite
 
 1. `mkdir my-react-app`
 2. `cd my-react-app`
@@ -91,3 +93,16 @@
 11. `npx webpack` - to build the project every time we make a change
 12. Create a copy of `index.html` and place it in the `dist` folder
 13. `npx serve dist`
+
+## Steps to create a react project with vite
+
+1. `mkdir vite-react-app`
+2. `cd vite-react-app`
+   1. `npm install vite@latest . -- --template react` <!-- To create in currenct directory -->
+   2. `npm install vite@latest vite-react-app -- --template react` <!-- To create in a specific directory -->
+3. `npm i`
+4. `npm run dev`
+
+### Other Templates
+
+> vanilla, vanilla-ts, vue, vue-ts, react, react-ts, react-swc, react-swc-ts, preact, preact-ts, lit, lit-ts, svelte, svelte-ts, solid, solid-ts, qwik, qwik-ts.

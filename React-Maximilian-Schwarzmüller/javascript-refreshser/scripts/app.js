@@ -46,7 +46,7 @@ const innerFunction = () => {
     greet();
 };
 
-innerFunction(); 
+innerFunction();
 // --------------------------------------------------------
 console.log(
     `The name of the student is ${vvo.student.name} and his age is ${
@@ -105,6 +105,21 @@ console.log(`The Hobbies are: ${firstHobby}, ${secondHobby}, ${thirdHobby}`);
 
 console.log(Arrays.ramsHobbies);
 console.log(Arrays.sitasHobbies);
+// --------------------------------------------------------
+import * as cba from "../scripts/callBackArrays.js";
+
+cba.forEachExample();
+cba.forEachExample1();
+
+cba.mapFunctionExample1();
+
+cba.filterFunctionExample1();
+
+cba.someFunctionExample1();
+
+cba.everyFunctionExample1();
+
+cba.reduceFunctionExample1();
 
 // --------------------------------------------------------
 import * as cs from "../scripts/control-structures.js";
@@ -116,3 +131,17 @@ console.log(cs.loopEvens(19));
 cs.loopArrays();
 
 // --------------------------------------------------------
+// setTimeout(pass a callback, and a delay)
+
+console.log("Before timeout");
+setTimeout(() => {
+    console.log("This is a timeout after 5 secs");
+}, 5000);
+
+// setInterval(pass a callback, and a duration which acts as an interval)
+console.log("Before interval");
+const intervalId = setInterval(() => {
+    console.log("I appear every 2 secs");
+}, 2000);
+// Clears the interval using the interval id.
+setTimeout(() => clearInterval(intervalId), 6000);
