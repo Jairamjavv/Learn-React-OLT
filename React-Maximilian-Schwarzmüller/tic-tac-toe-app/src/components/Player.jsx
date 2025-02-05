@@ -14,7 +14,7 @@ export const Player = ({
     // handle eidt/save button
     const handleEditClick = () => {
         setIsEditing((wasEditing) => !wasEditing);
-        onChangePlayerName(symbol, newPlayerName);
+        if (isEditing) onChangePlayerName(symbol, newPlayerName);
     };
 
     /**
